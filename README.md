@@ -1,13 +1,13 @@
-# microLint [![PyPI version](https://img.shields.io/pypi/v/microLint.svg)](https://pypi.python.org/pypi/microLint) [![Badges](https://badginator.herokuapp.com/arxanas/microLint.svg)](https://github.com/defunctzombie/badginator)
+# micro-lint [![PyPI version](https://img.shields.io/pypi/v/micro-lint.svg)](https://pypi.python.org/pypi/micro-lint) [![Badges](https://badginator.herokuapp.com/arxanas/micro-lint.svg)](https://github.com/defunctzombie/badginator)
 
-`microLint` checks your changes for coding style errors.
+`micro-lint` checks your changes for coding style errors.
 
 See https://suckless.org/coding_style/ for some of the rules streamlined. The coding standards
 can be found in the Manifesto as well!
 
-Here's `microLint` in action:
+Here's `micro-lint` in action:
 
-![Example microLint usage](media/example.png)
+![Example micro-lint usage](media/example.png)
 
 # Contributing
 
@@ -16,25 +16,25 @@ the project. Patches welcome!
 
 # Usage
 
-`microLint` requires Python 3, so you may want to install it inside a `virtualenv`
+`micro-lint` requires Python 3, so you may want to install it inside a `virtualenv`
 or use `pip3` instead of `pip`.
 
 Install it:
 
-    $ pip install microLint
+    $ pip install micro-lint
 
-Pass source files to `microLint` to have it check them. Typically you'll just use
+Pass source files to `micro-lint` to have it check them. Typically you'll just use
 a pattern like `*.cpp *.h` to match all source files in the current directory.
 
-    $ microLint *.cpp *.h
+    $ micro-lint *.cpp *.h
 
-If `microLint` detected any errors, it will exit with a non-zero status and print
+If `micro-lint` detected any errors, it will exit with a non-zero status and print
 the errors. Otherwise it will exit with zero and produce no output.
 
-By default, `microLint` assumes your source files are in C++. You can explicitly
+By default, `micro-lint` assumes your source files are in C++. You can explicitly
 set the language with `--lang=c` or `--lang=cpp`:
 
-    $ microLint --lang=c *.c *.h
+    $ micro-lint --lang=c *.c *.h
 
 # Features
 
@@ -86,4 +86,4 @@ std::vector<int>; /* ... */ Foo_t::iterator`).
 
 # License
 
-`microLint` is licensed under GPLv3.
+`micro-lint` is licensed under GPLv3.

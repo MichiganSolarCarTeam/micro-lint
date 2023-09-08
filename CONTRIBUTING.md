@@ -1,17 +1,17 @@
 # Getting started
 
-`microLint` is written in Python 3, so to get started, you'll have to have the
+`micro-lint` is written in Python 3, so to get started, you'll have to have the
 relevant developer tools. Install Python 3 on your system, as well as a program
 like `virtualenv` to manager your Python environments.
 
 ## Check out the repository
 
-Check out the `microLint` repository in a directory. Enter the directory and
+Check out the `micro-lint` repository in a directory. Enter the directory and
 create a new `virtualenv`. Make sure to specify Python 3 as the `virtualenv`
 executable.
 
-    $ git clone git@github.com:arxanas/microLint
-    $ cd microLint
+    $ git clone git@github.com:arxanas/micro-lint
+    $ cd micro-lint
     $ virtualenv -p python3 .venv
 
 Now activate the virtualenv:
@@ -29,7 +29,7 @@ Python:
 
 > **Note**: You're free to name your `virtualenv` whatever you want, but be aware
 > that Pytest may try to run tests that it happens to find in your `virtualenv`
-> directory. Some of `microLint`s dependencies have tests bundled with them.
+> directory. Some of `micro-lint`s dependencies have tests bundled with them.
 
 ## Install dependencies
 
@@ -46,15 +46,15 @@ Now you can run the test suite:
 The tests should all run and pass. If they don't all pass, you should file an
 issue.
 
-On occasion, you may want to run the `microLint` executable by hand. You can
-install the `microLint` executable in the virtualenv:
+On occasion, you may want to run the `micro-lint` executable by hand. You can
+install the `micro-lint` executable in the virtualenv:
 
     $ pip install -e .
-    $ microLint test.cpp
+    $ micro-lint test.cpp
 
 # Making changes
 
-Here is how `microLint` works:
+Here is how `micro-lint` works:
 
   1. Convert each source file into a list of tokens. See `tokenizer.py` for more
 information on what a token is.
@@ -87,8 +87,8 @@ Once you've made your changes, make sure that the following hold:
 all of your code and need to write test cases. It should tell you which lines of
 code have not been tested.
   * You don't have any linter errors (for the Python source code you wrote,
-    which is completely unrelated to the `microLint` project itself). Run `flake8
-microLint test` and ensure that it reports no errors.
+    which is completely unrelated to the `micro-lint` project itself). Run `flake8
+micro-lint test` and ensure that it reports no errors.
 
 If these do, you can commit and submit a pull request on Github. Make sure to
 reference an issue ID if there is one. Specify what behavior is being

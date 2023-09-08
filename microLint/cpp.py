@@ -1,7 +1,7 @@
 """C++ linters."""
 import re
 
-from microLint import c
+from micro-lint import c
 from .linter import Error, Linter
 from .matcher import match_regex, match_tokens, match_type, with_matched_tokens
 
